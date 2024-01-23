@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="Lotto.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lotto"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Name="root">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Name="lottoInputGrid" Grid.Row="0" Padding="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Din lottorad:" Grid.Column="0" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+            <TextBox Width="80" Height="80" Grid.Column="1" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox Width="80" Height="80" Grid.Column="2" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox Width="80" Height="80" Grid.Column="3" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox Width="80" Height="80" Grid.Column="4" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox Width="80" Height="80" Grid.Column="5" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox Width="80" Height="80" Grid.Column="6" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox Width="80" Height="80" Grid.Column="7" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+        </Grid>
+
+        <Grid Name="start" Grid.Row="1" Background="Bisque" Padding="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions> 
+            <TextBlock Text="Antal dragningar:" Grid.Column="0" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+            <TextBox Name="drawAmountBox" Height="100" Grid.Column="1" VerticalAlignment="Center" FontSize="40" FontWeight="Bold" Text="xd"></TextBox>
+            <Button Grid.Column="2" Width="300" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" CornerRadius="10" Click="start_lotto">
+                <TextBlock Text="Starta Lotto" FontSize="40" FontWeight="Bold"></TextBlock>
+            </Button>
+        </Grid>
+        
+        <Grid Name="amount" Grid.Row="2" Background="IndianRed" Padding="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="5 Rätt:" Grid.Column="0" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Name="fiveText" Text="10000" Grid.Column="1" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="6 Rätt:" Grid.Column="2" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Name="sixText" Text="10000" Grid.Column="3" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="7 Rätt:" Grid.Column="4" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Name="sevenText" Text="10000" Grid.Column="5" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+        </Grid>
+        
+    </Grid>
+</Page>

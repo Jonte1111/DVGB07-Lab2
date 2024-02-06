@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Windows.Devices.Printers;
 namespace Lotto
@@ -13,11 +14,11 @@ namespace Lotto
 				x = r.Next(1, 36);
 			return x;
 		}
-		private int checkLotto(int[] correct, int[] row)
+		private int checkLotto(List<int> correct, int[] row)
 		{
 			int n = 0;
 			Array.Sort(row);
-			for (int j = 0; j < correct.Length; j++)
+			for (int j = 0; j < correct.Count; j++)
 			{
 				for (int i = 0; i < 7; i++)
 				{
@@ -28,9 +29,9 @@ namespace Lotto
 			Console.WriteLine(n);
 			return n;
 		}
-		public (int five, int six, int seven) generateLotto(int rows, int[] correct)
+		public (int five, int six, int seven) generateLotto(int rows, List<int> correct)
 		{
-			Array.Sort(correct);
+			correct.Sort();
 			int[] lottoArr = new int[7];
 			int five = 0;
 			int six = 0;

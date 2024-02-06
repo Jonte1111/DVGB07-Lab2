@@ -22,19 +22,31 @@ namespace Lotto
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        int[] testRow = {7,6,5,4,3,2,1};
+        //int[] testRow = {7,6,5,4,3,2,1};
         LottoLogic ll = new LottoLogic();
+        InputHandling ih = new InputHandling();
         public MainPage()
         {
             this.InitializeComponent();
         }
         private void start_lotto(object sender, RoutedEventArgs e)
         {
+            List<TextBox>lottoNumbers = new List<TextBox>();
+            lottoNumbers.Add(lotto1);
+            lottoNumbers.Add(lotto2);
+            lottoNumbers.Add(lotto3);
+            lottoNumbers.Add(lotto4);
+            lottoNumbers.Add(lotto5);
+            lottoNumbers.Add(lotto6);
+            lottoNumbers.Add(lotto7);
+
             int[] lottoArr = new int[7];
             int five; int six; int seven;
-            (five, six, seven) = ll.generateLotto(999999, testRow);
+            List<int> row = new List<int>();
+            row = ih.lottoRowInput(lottoNumbers);
+            (five, six, seven) = ll.generateLotto(999999, row);
             string lottoString = string.Join(" ", lottoArr);
-            drawAmountBox.Text = lottoString;
+                        drawAmountBox.Text = lottoString;
             fiveText.Text = five.ToString();    
             sixText.Text = six.ToString();    
             sevenText.Text = seven.ToString();    

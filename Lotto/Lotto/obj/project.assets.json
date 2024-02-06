@@ -10262,11 +10262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jonte\\Documents\\DVGB07\\DVGB07-Lab2\\Lotto\\Lotto\\Lotto.csproj",
+      "projectUniqueName": "E:\\DVGB07\\DVGB07-Lab2\\Lotto\\Lotto\\Lotto.csproj",
       "projectName": "Lotto",
-      "projectPath": "C:\\Users\\jonte\\Documents\\DVGB07\\DVGB07-Lab2\\Lotto\\Lotto\\Lotto.csproj",
+      "projectPath": "E:\\DVGB07\\DVGB07-Lab2\\Lotto\\Lotto\\Lotto.csproj",
       "packagesPath": "C:\\Users\\jonte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jonte\\Documents\\DVGB07\\DVGB07-Lab2\\Lotto\\Lotto\\obj\\",
+      "outputPath": "E:\\DVGB07\\DVGB07-Lab2\\Lotto\\Lotto\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

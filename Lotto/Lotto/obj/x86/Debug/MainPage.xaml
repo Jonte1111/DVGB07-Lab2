@@ -27,13 +27,13 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <TextBlock Text="Din lottorad:" Grid.Column="0" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
-            <TextBox Width="80" Height="80" Grid.Column="1" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
-            <TextBox Width="80" Height="80" Grid.Column="2" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
-            <TextBox Width="80" Height="80" Grid.Column="3" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
-            <TextBox Width="80" Height="80" Grid.Column="4" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
-            <TextBox Width="80" Height="80" Grid.Column="5" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
-            <TextBox Width="80" Height="80" Grid.Column="6" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
-            <TextBox Width="80" Height="80" Grid.Column="7" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='11' Name="lotto1" Width="80" Height="80" Grid.Column="1" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='12' Name="lotto2" Width="80" Height="80" Grid.Column="2" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='13' Name="lotto3" Width="80" Height="80" Grid.Column="3" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='14' Name="lotto4" Width="80" Height="80" Grid.Column="4" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='15' Name="lotto5" Width="80" Height="80" Grid.Column="5" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='16' Name="lotto6" Width="80" Height="80" Grid.Column="6" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='17' Name="lotto7" Width="80" Height="80" Grid.Column="7" VerticalAlignment="Center" PlaceholderText="10" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center"></TextBox>
         </Grid>
 
         <Grid x:ConnectionId='4' Name="start" Grid.Row="1" Background="Bisque" Padding="20">

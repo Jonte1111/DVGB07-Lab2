@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yhEKuIkLrO2dpJIgMv6efHXHoZor8RkV76YkzQvrEfatgnbRFvzrvT/MZfIOZ/Es8IAB/PgrdgKrJpfPuluiBg==",
+  "dgSpecHash": "j060wDfF73MX9u52Jl5q6wX65SgX/Q5Sp7KvIiTwXG3u7IwUXunA87DoukCZSBhcc1V8ECL6D2/buHBukUbDOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonte\\Documents\\DVGB07\\DVGB07-Lab2\\Lotto\\Lotto\\Lotto.csproj",
+  "projectFilePath": "E:\\DVGB07\\DVGB07-Lab2\\Lotto\\Lotto\\Lotto.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",

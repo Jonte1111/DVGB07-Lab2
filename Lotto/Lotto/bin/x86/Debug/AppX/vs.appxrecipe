@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\DVGB07\DVGB07-Lab2\Lotto\Lotto\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-06T09:40:29.829</Modified>
+      <Modified>2024-02-10T14:32:17.970</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\DVGB07\DVGB07-Lab2\Lotto\Lotto\bin\x86\Debug\Lotto.exe">
       <PackagePath>entrypoint\Lotto.exe</PackagePath>
-      <Modified>2024-02-06T09:40:28.896</Modified>
+      <Modified>2024-02-10T14:32:17.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,15 +86,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\DVGB07\DVGB07-Lab2\Lotto\Lotto\bin\x86\Debug\Lotto.xr.xml">
       <PackagePath>Lotto.xr.xml</PackagePath>
-      <Modified>2024-02-06T08:50:48.521</Modified>
+      <Modified>2024-02-10T13:21:27.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\DVGB07\DVGB07-Lab2\Lotto\Lotto\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-02-06T09:40:28.834</Modified>
+      <Modified>2024-02-10T14:32:17.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\DVGB07\DVGB07-Lab2\Lotto\Lotto\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-02-06T09:40:28.834</Modified>
+      <Modified>2024-02-10T14:32:17.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -106,7 +106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\DVGB07\DVGB07-Lab2\Lotto\Lotto\bin\x86\Debug\Core\Lotto.exe">
       <PackagePath>Lotto.exe</PackagePath>
-      <Modified>2024-02-06T09:40:29.819</Modified>
+      <Modified>2024-02-10T14:32:17.967</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

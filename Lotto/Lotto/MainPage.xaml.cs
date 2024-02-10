@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -31,7 +33,8 @@ namespace Lotto
         }
         private void start_lotto(object sender, RoutedEventArgs e)
         {
-            List<TextBox>lottoNumbers = new List<TextBox>();
+            List<TextBox> lottoNumbers = new List<TextBox>();
+            List<int> row;
             lottoNumbers.Add(lotto1);
             lottoNumbers.Add(lotto2);
             lottoNumbers.Add(lotto3);
@@ -40,16 +43,52 @@ namespace Lotto
             lottoNumbers.Add(lotto6);
             lottoNumbers.Add(lotto7);
 
-            int[] lottoArr = new int[7];
             int five; int six; int seven;
-            List<int> row = new List<int>();
-            row = ih.lottoRowInput(lottoNumbers);
-            (five, six, seven) = ll.generateLotto(999999, row);
-            string lottoString = string.Join(" ", lottoArr);
-                        drawAmountBox.Text = lottoString;
-            fiveText.Text = five.ToString();    
-            sixText.Text = six.ToString();    
-            sevenText.Text = seven.ToString();    
+            (five, six, seven) = (0, 0, 0);
+            if (ih.rowIsCorrect(lottoNumbers) && ih.isInt(drawAmountBox.Text))
+            {
+                try
+                {
+                    row = ih.convertList(lottoNumbers);
+                    (five, six, seven) = ll.generateLotto(int.Parse(drawAmountBox.Text), row);
+                    fiveText.Text = five.ToString();
+                    sixText.Text = six.ToString();
+                    sevenText.Text = seven.ToString();
+                }
+                catch
+                {
+                    System.Diagnostics.Debug.WriteLine("Row is invalid");
+                }
+            }
+            else
+                    System.Diagnostics.Debug.WriteLine("Row is invalid or amount is invalid");
+
+        }
+        
+        //Changes the border colors if value inside is not valid
+        private void lotto_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox lottoBox= (TextBox)sender;
+            int n = 0;
+            if (lottoBox.Text != null && ih.isInt(lottoBox.Text))
+            {
+                n = int.Parse(lottoBox.Text);
+                if(!ih.isValidInt(n)) 
+                    lottoBox.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Crimson);
+                else
+                    lottoBox.BorderBrush = new SolidColorBrush(Windows.UI.Colors.White);
+            }
+            else
+                    lottoBox.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Crimson);
+        }
+
+        private void drawAmountBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox amountBox = (TextBox)sender;
+            if (amountBox.Text == null || !ih.isInt(amountBox.Text))
+                    amountBox.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Crimson);
+            else
+                    amountBox.BorderBrush = new SolidColorBrush(Windows.UI.Colors.White);
         }
     }
 }

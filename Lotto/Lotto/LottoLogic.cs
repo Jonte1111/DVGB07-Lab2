@@ -45,7 +45,6 @@ namespace Lotto
 				Console.WriteLine(correct);
 				switch(checkLotto(correct, lottoArr)) {
 					case 5:
-						//System.Diagnostics.Debug.WriteLine("[{0}]", string.Join(", ", lottoArr));
 						five++;
 						break;
 					case 6:

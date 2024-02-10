@@ -12,8 +12,8 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Background" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -38,11 +38,11 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="Width" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="TextAlignment" />
+      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Width" />

@@ -10,10 +10,16 @@ namespace Lotto
     {
         public bool rowIsCorrect(List<TextBox> list)
         {
-            List<int> lottoNums = new List<int>();   
+            List<int> lottoNums = new List<int>();
+            int n = 0;
             for(int i = 0; i < 7; i++) {
-                if (list[i] != null && isInt(list[i].Text) && isValidInt(int.Parse(list[i].Text)))
-                    try {
+                if (list[i] != null && isInt(list[i].Text))
+                    n = int.Parse(list[i].Text);
+                if (isValidInt(n))
+                {
+
+                    try
+                    {
                         lottoNums.Add(int.Parse(list[i].Text));
                     }
                     catch
@@ -21,6 +27,9 @@ namespace Lotto
                         Console.WriteLine("Row is invalid");
                         return false;
                     }
+                }
+                else
+                    return false;
             }
             if(!hasDuplicates(lottoNums))
                 return true;    

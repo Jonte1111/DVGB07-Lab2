@@ -35,6 +35,7 @@ namespace Lotto
         {
             List<TextBox> lottoNumbers = new List<TextBox>();
             List<int> row;
+            lottoNumbers.Clear();
             lottoNumbers.Add(lotto1);
             lottoNumbers.Add(lotto2);
             lottoNumbers.Add(lotto3);
@@ -54,6 +55,8 @@ namespace Lotto
                     fiveText.Text = five.ToString();
                     sixText.Text = six.ToString();
                     sevenText.Text = seven.ToString();
+                    row.Clear();
+                    lottoNumbers.Clear();
                 }
                 catch
                 {
